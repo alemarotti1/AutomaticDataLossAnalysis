@@ -1,0 +1,44 @@
+{
+  "stop_state": "dbc7a8d7c9d042c668d624e4db28348e", 
+  "event_str": "ScrollEvent(direction=UP)", 
+  "tag": "2021-11-03_164709", 
+  "event": {
+    "direction": "UP", 
+    "event_type": "scroll", 
+    "y_full_down": 1750, 
+    "y": null, 
+    "x": null, 
+    "id": 41, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/recyclerView", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": false, 
+      "checkable": false, 
+      "size": "720*1224", 
+      "scrollable": true, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          0, 
+          236
+        ], 
+        [
+          720, 
+          1460
+        ]
+      ], 
+      "class": "androidx.recyclerview.widget.RecyclerView", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "dbc7a8d7c9d042c668d624e4db28348e"
+}

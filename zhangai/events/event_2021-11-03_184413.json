@@ -1,0 +1,42 @@
+{
+  "stop_state": "beb8c9d08ad3efee9fa2df60011211bb", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_184413", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Recolher", 
+      "resource_id": null, 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "98*98", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          14, 
+          54
+        ], 
+        [
+          112, 
+          152
+        ]
+      ], 
+      "class": "android.widget.ImageButton", 
+      "focusable": true
+    }, 
+    "id": 0, 
+    "event_type": "touch"
+  }, 
+  "start_state": "bfad15bd56a1617fbca3d074e0650144"
+}

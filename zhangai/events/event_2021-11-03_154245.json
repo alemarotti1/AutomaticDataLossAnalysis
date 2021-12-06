@@ -1,0 +1,43 @@
+{
+  "stop_state": "7024c7837b20297f9473ee5d045b2bf3", 
+  "event_str": "LongTouchEvent(duration=2000)", 
+  "tag": "2021-11-03_154245", 
+  "event": {
+    "event_type": "long_touch", 
+    "duration": 2000, 
+    "y": null, 
+    "x": null, 
+    "id": 59, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/itemLayout", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "720*126", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          0, 
+          614
+        ], 
+        [
+          720, 
+          740
+        ]
+      ], 
+      "class": "android.widget.LinearLayout", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "00d0f23d22ca37cfa2d030a04285b0d0"
+}

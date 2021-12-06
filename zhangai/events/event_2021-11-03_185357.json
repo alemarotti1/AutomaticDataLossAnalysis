@@ -1,0 +1,42 @@
+{
+  "stop_state": "1c70333396ca769c572a520fe3356b14", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_185357", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/tarXzRadio", 
+      "text": ".tar.xz", 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": true, 
+      "size": "175*70", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          267, 
+          559
+        ], 
+        [
+          442, 
+          629
+        ]
+      ], 
+      "class": "android.widget.RadioButton", 
+      "focusable": true
+    }, 
+    "id": 7, 
+    "event_type": "touch"
+  }, 
+  "start_state": "51466695ec0f8353bc98a58e0e02d59a"
+}

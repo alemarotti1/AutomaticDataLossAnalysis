@@ -1,0 +1,44 @@
+{
+  "stop_state": "a291db1113a05f66fc923342e077faa4", 
+  "event_str": "ScrollEvent(direction=UP)", 
+  "tag": "2021-11-03_191813", 
+  "event": {
+    "direction": "UP", 
+    "event_type": "scroll", 
+    "y_full_down": 1750, 
+    "y": null, 
+    "x": null, 
+    "id": 16, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/breadcrumbLayout", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": false, 
+      "checkable": false, 
+      "size": "720*84", 
+      "scrollable": true, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          0, 
+          152
+        ], 
+        [
+          720, 
+          236
+        ]
+      ], 
+      "class": "android.widget.HorizontalScrollView", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "a291db1113a05f66fc923342e077faa4"
+}

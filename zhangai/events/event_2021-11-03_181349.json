@@ -1,0 +1,51 @@
+{
+  "stop_state": "178256b4f6f90f5c22e320fbaf9799d8", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_181349", 
+  "event": {
+    "views_str": [
+      "f8185cb30bf23165deee8d865812ebd5"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/allCheck", 
+        "text": "Aplique esta a\u00e7\u00e3o a todos os arquivos", 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "527*99", 
+        "checked": false, 
+        "temp_id": 16, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/allCheck", 
+        "is_password": false, 
+        "parent": 14, 
+        "focusable": true, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.CheckBox", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "f8185cb30bf23165deee8d865812ebd5", 
+        "enabled": true, 
+        "bounds": [
+          [
+            90, 
+            851
+          ], 
+          [
+            617, 
+            950
+          ]
+        ], 
+        "signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/allCheck[text]Aplique esta a\u00e7\u00e3o a todos os arquivos[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "fff43727eda1967dce94ddad778a03f3"
+}

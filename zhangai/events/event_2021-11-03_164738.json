@@ -1,0 +1,42 @@
+{
+  "stop_state": "882a48da2c0a12abc58c4191c25539a1", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_164738", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Colar", 
+      "resource_id": "me.zhanghai.android.files:id/action_paste", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          611, 
+          1467
+        ], 
+        [
+          695, 
+          1551
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }, 
+    "id": 40, 
+    "event_type": "touch"
+  }, 
+  "start_state": "dbc7a8d7c9d042c668d624e4db28348e"
+}

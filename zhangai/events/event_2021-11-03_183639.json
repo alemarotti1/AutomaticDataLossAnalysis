@@ -1,0 +1,42 @@
+{
+  "stop_state": "036212c09484eb6972122092340f88c3", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_183639", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Recortar", 
+      "resource_id": "me.zhanghai.android.files:id/action_cut", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          379, 
+          61
+        ], 
+        [
+          463, 
+          145
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }, 
+    "id": 5, 
+    "event_type": "touch"
+  }, 
+  "start_state": "dc5d786966874e0bfb9fa46111a3f1b2"
+}

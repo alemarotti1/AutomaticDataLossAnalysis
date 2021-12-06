@@ -1,0 +1,42 @@
+{
+  "stop_state": "daf2078fb8e6942e25684b5d8d6120dc", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_154134", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/sd_main_fab", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "140*156", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          573, 
+          1402
+        ], 
+        [
+          713, 
+          1558
+        ]
+      ], 
+      "class": "android.widget.ImageButton", 
+      "focusable": true
+    }, 
+    "id": 6, 
+    "event_type": "touch"
+  }, 
+  "start_state": "cd1f97ddc1459ea4521b829e21eea723"
+}

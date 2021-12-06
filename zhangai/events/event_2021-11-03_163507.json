@@ -1,0 +1,42 @@
+{
+  "stop_state": "0dd0cc2e896bff60bff2897bc6d37bec", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_163507", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+      "text": "Armazenamento intetest123rno compartilhado", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": true, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "515*98", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          102, 
+          691
+        ], 
+        [
+          617, 
+          789
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }, 
+    "id": 0, 
+    "event_type": "touch"
+  }, 
+  "start_state": "0dd0cc2e896bff60bff2897bc6d37bec"
+}

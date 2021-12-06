@@ -1,0 +1,42 @@
+{
+  "stop_state": "b51f1d34ef1682ae081555d9009e83df", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_182521", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Procurar", 
+      "resource_id": "me.zhanghai.android.files:id/action_search", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          463, 
+          61
+        ], 
+        [
+          547, 
+          145
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }, 
+    "id": 1, 
+    "event_type": "touch"
+  }, 
+  "start_state": "39103a83918a2904b97cabc8ecdd075a"
+}

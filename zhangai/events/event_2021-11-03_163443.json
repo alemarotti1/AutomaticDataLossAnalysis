@@ -1,0 +1,89 @@
+{
+  "stop_state": "0dd0cc2e896bff60bff2897bc6d37bec", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_163443", 
+  "event": {
+    "views_str": [
+      "f6da27205bfe60383fb1e6da063aebcc", 
+      "977a8afc54d8405dd5ecc965e8a80315"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+        "text": "Armazenamento interno compartilhado", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 16, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/nameEdit", 
+        "is_password": false, 
+        "parent": 15, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": true, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "f6da27205bfe60383fb1e6da063aebcc", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            419
+          ], 
+          [
+            617, 
+            517
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/nameEdit[text]Armazenamento interno compartilhado[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/pathText", 
+        "text": "/storage/emulated/0", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 22, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/pathText", 
+        "is_password": false, 
+        "parent": 21, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "977a8afc54d8405dd5ecc965e8a80315", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            554
+          ], 
+          [
+            617, 
+            652
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/pathText[text]/storage/emulated/0[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "888bb0bbf24b23ad79aab4789c85ee35"
+}

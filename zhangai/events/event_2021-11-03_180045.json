@@ -1,0 +1,43 @@
+{
+  "stop_state": "9d54802eafd7491c89e460763cad9a96", 
+  "event_str": "LongTouchEvent(duration=2000)", 
+  "tag": "2021-11-03_180045", 
+  "event": {
+    "event_type": "long_touch", 
+    "duration": 2000, 
+    "y": null, 
+    "x": null, 
+    "id": 29, 
+    "view": {
+      "content_description": "Classificar", 
+      "resource_id": "me.zhanghai.android.files:id/action_sort", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          547, 
+          61
+        ], 
+        [
+          631, 
+          145
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "9d54802eafd7491c89e460763cad9a96"
+}

@@ -1,0 +1,42 @@
+{
+  "stop_state": "d54bd61dd04ef1c9cd87343c2329d57e", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_175638", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/menuButton", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          622, 
+          1013
+        ], 
+        [
+          706, 
+          1097
+        ]
+      ], 
+      "class": "android.widget.ImageButton", 
+      "focusable": true
+    }, 
+    "id": 33, 
+    "event_type": "touch"
+  }, 
+  "start_state": "241b9376da0aeee1f1f2883aacf4834f"
+}

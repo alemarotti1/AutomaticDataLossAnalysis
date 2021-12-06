@@ -1,0 +1,43 @@
+{
+  "stop_state": "c229a7e7629e40a53b860bf15ee0912f", 
+  "event_str": "SetTextEvent", 
+  "tag": "2021-11-03_191423", 
+  "event": {
+    "event_type": "set_text", 
+    "text": "HelloWorld", 
+    "y": null, 
+    "x": null, 
+    "id": 20, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/search_src_text", 
+      "text": "Pesquisar\u2026", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "491*63", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          126, 
+          71
+        ], 
+        [
+          617, 
+          134
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "b46fa3eaeed9e2e3e5a8f94817aa1bb9"
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de gerenciamento de modelo</title>
+        <!-- import jquery from the web-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- import bootstrap from the web-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+        
+    </head>
+    <body>
+        <!--- create a bootstrap top navbar with the links to "defineHelp.html" and "validateChoice.html"  -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Sistema de gerenciamento de modelo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="defineHelp.html">Define Help<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="validateChoice.html">Validate Choice</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Essa imagem contem um Data Loss?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img style="max-height: 80vh;" src="data/zhangai/dataloss/EditDeviceStorageDialogActivity/2021-11-03 16-35-02_before.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-sm-6">
+                    <img style="max-height: 80vh;" src="data/zhangai/dataloss/EditDeviceStorageDialogActivity/2021-11-03 16-35-02_after.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <!-- define a centralized button with "yes" and with "no"-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary btn-md btn-block" onclick="yes()">Sim</button>
+                    <button type="button" class="btn btn-primary btn-md btn-block" onclick="no()">Não</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+    </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>

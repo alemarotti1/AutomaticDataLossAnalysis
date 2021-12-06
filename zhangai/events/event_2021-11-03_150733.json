@@ -1,0 +1,279 @@
+{
+  "stop_state": "d42c6e926811047eeba60b369a0c9b29", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_150733", 
+  "event": {
+    "views_str": [
+      "3c61d232dbb278c04eec3adc275d9ab3", 
+      "8881202be551a551277ae7a8e9ea4b64", 
+      "8881202be551a551277ae7a8e9ea4b64", 
+      "8881202be551a551277ae7a8e9ea4b64", 
+      "bfdfb3a23764d59ab8655eea21de3180", 
+      "bfdfb3a23764d59ab8655eea21de3180", 
+      "82896dc7a707acd65a9d0e22cc7a92f9"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/radio", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": true, 
+        "temp_id": 7, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio", 
+        "is_password": false, 
+        "parent": 4, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "3c61d232dbb278c04eec3adc275d9ab3", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            90
+          ], 
+          [
+            692, 
+            146
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio[text]None[enabled,checked,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/radio", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": false, 
+        "temp_id": 12, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio", 
+        "is_password": false, 
+        "parent": 9, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "8881202be551a551277ae7a8e9ea4b64", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            174
+          ], 
+          [
+            692, 
+            230
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio[text]None[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/radio", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": false, 
+        "temp_id": 17, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio", 
+        "is_password": false, 
+        "parent": 14, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "8881202be551a551277ae7a8e9ea4b64", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            258
+          ], 
+          [
+            692, 
+            314
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio[text]None[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/radio", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": false, 
+        "temp_id": 22, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio", 
+        "is_password": false, 
+        "parent": 19, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "8881202be551a551277ae7a8e9ea4b64", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            342
+          ], 
+          [
+            692, 
+            398
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/radio[text]None[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/checkbox", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": true, 
+        "temp_id": 27, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox", 
+        "is_password": false, 
+        "parent": 24, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.CheckBox", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "bfdfb3a23764d59ab8655eea21de3180", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            426
+          ], 
+          [
+            692, 
+            482
+          ]
+        ], 
+        "signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox[text]None[enabled,checked,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/checkbox", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": true, 
+        "temp_id": 32, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox", 
+        "is_password": false, 
+        "parent": 29, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.CheckBox", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "bfdfb3a23764d59ab8655eea21de3180", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            510
+          ], 
+          [
+            692, 
+            566
+          ]
+        ], 
+        "signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox[text]None[enabled,checked,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/checkbox", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": false, 
+        "temp_id": 37, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox", 
+        "is_password": false, 
+        "parent": 34, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.CheckBox", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "82896dc7a707acd65a9d0e22cc7a92f9", 
+        "enabled": true, 
+        "bounds": [
+          [
+            636, 
+            594
+          ], 
+          [
+            692, 
+            650
+          ]
+        ], 
+        "signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox[text]None[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "4ac13bbdeddbaee66df9b92bb82d7208"
+}

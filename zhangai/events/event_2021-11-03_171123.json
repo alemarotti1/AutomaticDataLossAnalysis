@@ -1,0 +1,43 @@
+{
+  "stop_state": "ddd19dc353bbd1f075e9e278a0b24bda", 
+  "event_str": "LongTouchEvent(duration=2000)", 
+  "tag": "2021-11-03_171123", 
+  "event": {
+    "event_type": "long_touch", 
+    "duration": 2000, 
+    "y": null, 
+    "x": null, 
+    "id": 3, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+      "text": "Notifications", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": true, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "515*98", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          102, 
+          482
+        ], 
+        [
+          617, 
+          580
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "ddd19dc353bbd1f075e9e278a0b24bda"
+}

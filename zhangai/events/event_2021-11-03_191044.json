@@ -1,0 +1,43 @@
+{
+  "stop_state": "d32e9bd3f5479ead1b4ab8c69a31a7bd", 
+  "event_str": "SetTextEvent", 
+  "tag": "2021-11-03_191044", 
+  "event": {
+    "event_type": "set_text", 
+    "text": "HelloWorld", 
+    "y": null, 
+    "x": null, 
+    "id": 7, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+      "text": "batterytracer", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": true, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "515*98", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          102, 
+          381
+        ], 
+        [
+          617, 
+          479
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "2eae68beddd4d6fd54a5ec233f5c18c5"
+}

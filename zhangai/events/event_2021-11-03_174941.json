@@ -1,0 +1,42 @@
+{
+  "stop_state": "8e02fa366a452568248806f93d5169f8", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_174941", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/text", 
+      "text": "Pasta (vnd.android.document/directory)", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "515*131", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          102, 
+          790
+        ], 
+        [
+          617, 
+          921
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }, 
+    "id": 3, 
+    "event_type": "touch"
+  }, 
+  "start_state": "8e02fa366a452568248806f93d5169f8"
+}

@@ -1,0 +1,10 @@
+{
+  "stop_state": "20972438647a1d5f42266de7a82b5ce1", 
+  "event_str": "IntentEvent(intent='am start me.zhanghai.android.files/me.zhanghai.android.files.filelist.FileListActivity')", 
+  "tag": "2021-11-03_170647", 
+  "event": {
+    "intent": "am start me.zhanghai.android.files/me.zhanghai.android.files.filelist.FileListActivity", 
+    "event_type": "intent"
+  }, 
+  "start_state": "e5f3ff94507c96c5b37d37b5d19826cd"
+}

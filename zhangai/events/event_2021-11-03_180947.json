@@ -1,0 +1,42 @@
+{
+  "stop_state": "414ead71d5359f89c5e3646402162321", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_180947", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Copiar", 
+      "resource_id": "me.zhanghai.android.files:id/action_copy", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          463, 
+          61
+        ], 
+        [
+          547, 
+          145
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }, 
+    "id": 6, 
+    "event_type": "touch"
+  }, 
+  "start_state": "3a52c4c57b1efe841f407df39de954c1"
+}

@@ -1,0 +1,355 @@
+{
+  "stop_state": "876ee2a9b6ef741d18fb54384945f660", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_154356", 
+  "event": {
+    "views_str": [
+      "f5d6fc045f08856775036f955a953da6", 
+      "7115461952765ec08830aff6332513dc", 
+      "ac11eb936165e1248607cede88df6ef7", 
+      "a47171f36bfedc508175b2a76a4957af", 
+      "9d2fa1ebe0e6ac2f196b9f95b714e97a", 
+      "1bed18eb6c1c59f505824ff296c880fc", 
+      "613f2b3b7b6445673ffe275ad4df793d", 
+      "66e6f78d3a37b949ff1b7f0daa68617a", 
+      "a9bf592c41f25db06befc70ead4a73fc"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "Documents", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 27, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 26, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "f5d6fc045f08856775036f955a953da6", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            520
+          ], 
+          [
+            617, 
+            618
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]Documents[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "/storage/emulated/0", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 33, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 32, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "7115461952765ec08830aff6332513dc", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            655
+          ], 
+          [
+            617, 
+            753
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]/storage/emulated/0[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "Pasta (vnd.android.document/directory)", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*131", 
+        "checked": false, 
+        "temp_id": 39, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 38, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "ac11eb936165e1248607cede88df6ef7", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            790
+          ], 
+          [
+            617, 
+            921
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]Pasta (vnd.android.document/directory)[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "Vazio", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 45, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 44, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "a47171f36bfedc508175b2a76a4957af", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            958
+          ], 
+          [
+            617, 
+            1056
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]Vazio[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "28 de jun. de 2021 03:14:24", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 51, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 50, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "9d2fa1ebe0e6ac2f196b9f95b714e97a", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            1093
+          ], 
+          [
+            617, 
+            1191
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]28 de jun. de 2021 03:14:24[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "root (0)", 
+        "visible": false, 
+        "checkable": false, 
+        "children": [], 
+        "size": "-42*98", 
+        "checked": false, 
+        "temp_id": 61, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 60, 
+        "focusable": false, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "1bed18eb6c1c59f505824ff296c880fc", 
+        "enabled": true, 
+        "bounds": [
+          [
+            701, 
+            520
+          ], 
+          [
+            659, 
+            618
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]root (0)[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "everybody (9997)", 
+        "visible": false, 
+        "checkable": false, 
+        "children": [], 
+        "size": "-42*98", 
+        "checked": false, 
+        "temp_id": 68, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 67, 
+        "focusable": false, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "613f2b3b7b6445673ffe275ad4df793d", 
+        "enabled": true, 
+        "bounds": [
+          [
+            701, 
+            655
+          ], 
+          [
+            659, 
+            753
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]everybody (9997)[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "rwxrwx--- (0770)", 
+        "visible": false, 
+        "checkable": false, 
+        "children": [], 
+        "size": "-42*98", 
+        "checked": false, 
+        "temp_id": 75, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 74, 
+        "focusable": false, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "66e6f78d3a37b949ff1b7f0daa68617a", 
+        "enabled": true, 
+        "bounds": [
+          [
+            701, 
+            790
+          ], 
+          [
+            659, 
+            888
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]rwxrwx--- (0770)[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/text", 
+        "text": "u:object_r:fuse:s0", 
+        "visible": false, 
+        "checkable": false, 
+        "children": [], 
+        "size": "-42*98", 
+        "checked": false, 
+        "temp_id": 82, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text", 
+        "is_password": false, 
+        "parent": 81, 
+        "focusable": false, 
+        "editable": true, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "a9bf592c41f25db06befc70ead4a73fc", 
+        "enabled": true, 
+        "bounds": [
+          [
+            701, 
+            925
+          ], 
+          [
+            659, 
+            1023
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/text[text]u:object_r:fuse:s0[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "8e02fa366a452568248806f93d5169f8"
+}

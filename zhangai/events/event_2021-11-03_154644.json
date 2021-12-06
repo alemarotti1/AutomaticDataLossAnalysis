@@ -1,0 +1,43 @@
+{
+  "stop_state": "a73e1e79b9cc7e8813588ce8253ac873", 
+  "event_str": "SetTextEvent", 
+  "tag": "2021-11-03_154644", 
+  "event": {
+    "event_type": "set_text", 
+    "text": "HelloWorld", 
+    "y": null, 
+    "x": null, 
+    "id": 4, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+      "text": "Alarms", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": true, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "515*98", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          102, 
+          754
+        ], 
+        [
+          617, 
+          852
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "b1532efd91d605f548f53316a909bdaa"
+}

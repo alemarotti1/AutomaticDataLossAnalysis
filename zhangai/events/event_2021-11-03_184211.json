@@ -1,0 +1,42 @@
+{
+  "stop_state": "48d812e113db6bcb056e3c9be81bcd40", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_184211", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/allCheck", 
+      "text": "Aplique esta a\u00e7\u00e3o a todos os arquivos", 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": true, 
+      "size": "527*99", 
+      "scrollable": false, 
+      "checked": true, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          90, 
+          814
+        ], 
+        [
+          617, 
+          913
+        ]
+      ], 
+      "class": "android.widget.CheckBox", 
+      "focusable": true
+    }, 
+    "id": 0, 
+    "event_type": "touch"
+  }, 
+  "start_state": "a6f19d85fe6ac33fb159c390764937cc"
+}

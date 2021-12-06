@@ -1,0 +1,42 @@
+{
+  "stop_state": "b173739c0ff1ed22db7a3c2688914a5c", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_153514", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "android:id/button2", 
+      "text": "CANCELAR", 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "175*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          344, 
+          598
+        ], 
+        [
+          519, 
+          682
+        ]
+      ], 
+      "class": "android.widget.Button", 
+      "focusable": true
+    }, 
+    "id": 1, 
+    "event_type": "touch"
+  }, 
+  "start_state": "7ad91f34d4dc1aac6a8f237f893adfd0"
+}

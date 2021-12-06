@@ -1,0 +1,43 @@
+{
+  "stop_state": "fb8b12c28712fb8e4269afb42ff40736", 
+  "event_str": "SetTextEvent", 
+  "tag": "2021-11-03_185403", 
+  "event": {
+    "event_type": "set_text", 
+    "text": "HelloWorld", 
+    "y": null, 
+    "x": null, 
+    "id": 10, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+      "text": "Notifications", 
+      "editable": true, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": true, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "515*98", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          102, 
+          447
+        ], 
+        [
+          617, 
+          545
+        ]
+      ], 
+      "class": "android.widget.EditText", 
+      "focusable": true
+    }
+  }, 
+  "start_state": "1c70333396ca769c572a520fe3356b14"
+}

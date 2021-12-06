@@ -1,0 +1,42 @@
+{
+  "stop_state": "ad4c9861cdd17a9009a2c46a79688e0c", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_154847", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Classificar", 
+      "resource_id": "me.zhanghai.android.files:id/action_sort", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": true, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          547, 
+          61
+        ], 
+        [
+          631, 
+          145
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }, 
+    "id": 2, 
+    "event_type": "touch"
+  }, 
+  "start_state": "296ce8b329fb4c0dae0b973579ce8136"
+}

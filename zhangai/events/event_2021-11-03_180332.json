@@ -1,0 +1,42 @@
+{
+  "stop_state": "5a3e9a1c47d169cc5cdb957d0a0f896f", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_180332", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": "Excluir", 
+      "resource_id": "me.zhanghai.android.files:id/action_delete", 
+      "text": null, 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": false, 
+      "size": "84*84", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          547, 
+          61
+        ], 
+        [
+          631, 
+          145
+        ]
+      ], 
+      "class": "android.widget.TextView", 
+      "focusable": true
+    }, 
+    "id": 7, 
+    "event_type": "touch"
+  }, 
+  "start_state": "e951ef878506a02dcdaecbfb755f6a2f"
+}

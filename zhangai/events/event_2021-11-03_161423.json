@@ -1,0 +1,51 @@
+{
+  "stop_state": "a752e22d8b3f77ffd8bb62455fddcdc4", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_161423", 
+  "event": {
+    "views_str": [
+      "e84d8a5028a6db86ee23a50e63763aa2"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/search_src_text", 
+        "text": "Pesquisar\u2026", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "491*63", 
+        "checked": false, 
+        "temp_id": 18, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/search_src_text", 
+        "is_password": false, 
+        "parent": 17, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": true, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "e84d8a5028a6db86ee23a50e63763aa2", 
+        "enabled": true, 
+        "bounds": [
+          [
+            126, 
+            71
+          ], 
+          [
+            617, 
+            134
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/search_src_text[text]Pesquisar\u2026[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "71ddeb519b4cf82b29b4daaa9008076e"
+}

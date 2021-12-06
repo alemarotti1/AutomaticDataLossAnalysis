@@ -1,0 +1,165 @@
+{
+  "stop_state": "434ad559cf867aa1d6f1fa2524afca60", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_152414", 
+  "event": {
+    "views_str": [
+      "035154341846644cd7994d94f7945259", 
+      "7d49533dbacabfb95b865df1136451c2", 
+      "b36fe09363d3e37d6d272a4e8849191e", 
+      "ac81f9a56092614282a3fdfbe7aa0318"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/nameEdit", 
+        "text": "Documents", 
+        "visible": true, 
+        "checkable": false, 
+        "children": [], 
+        "size": "515*98", 
+        "checked": false, 
+        "temp_id": 16, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/nameEdit", 
+        "is_password": false, 
+        "parent": 15, 
+        "focusable": true, 
+        "editable": true, 
+        "focused": true, 
+        "clickable": true, 
+        "class": "android.widget.EditText", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": true, 
+        "view_str": "035154341846644cd7994d94f7945259", 
+        "enabled": true, 
+        "bounds": [
+          [
+            102, 
+            447
+          ], 
+          [
+            617, 
+            545
+          ]
+        ], 
+        "signature": "[class]android.widget.EditText[resource_id]me.zhanghai.android.files:id/nameEdit[text]Documents[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/zipRadio", 
+        "text": ".zip", 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "175*70", 
+        "checked": true, 
+        "temp_id": 21, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/zipRadio", 
+        "is_password": false, 
+        "parent": 20, 
+        "focusable": true, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "7d49533dbacabfb95b865df1136451c2", 
+        "enabled": true, 
+        "bounds": [
+          [
+            92, 
+            559
+          ], 
+          [
+            267, 
+            629
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/zipRadio[text].zip[enabled,checked,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/tarXzRadio", 
+        "text": ".tar.xz", 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "175*70", 
+        "checked": false, 
+        "temp_id": 22, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/tarXzRadio", 
+        "is_password": false, 
+        "parent": 20, 
+        "focusable": true, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "b36fe09363d3e37d6d272a4e8849191e", 
+        "enabled": true, 
+        "bounds": [
+          [
+            267, 
+            559
+          ], 
+          [
+            442, 
+            629
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/tarXzRadio[text].tar.xz[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/sevenZRadio", 
+        "text": ".7z", 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "175*70", 
+        "checked": false, 
+        "temp_id": 23, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/sevenZRadio", 
+        "is_password": false, 
+        "parent": 20, 
+        "focusable": true, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": true, 
+        "class": "android.widget.RadioButton", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "ac81f9a56092614282a3fdfbe7aa0318", 
+        "enabled": true, 
+        "bounds": [
+          [
+            442, 
+            559
+          ], 
+          [
+            617, 
+            629
+          ]
+        ], 
+        "signature": "[class]android.widget.RadioButton[resource_id]me.zhanghai.android.files:id/sevenZRadio[text].7z[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "a1e5530742efbea145d55d07c2de0f72"
+}

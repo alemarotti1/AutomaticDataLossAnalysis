@@ -1,0 +1,42 @@
+{
+  "stop_state": "434ad559cf867aa1d6f1fa2524afca60", 
+  "event_str": "TouchEvent", 
+  "tag": "2021-11-03_152453", 
+  "event": {
+    "y": null, 
+    "x": null, 
+    "view": {
+      "content_description": null, 
+      "resource_id": "me.zhanghai.android.files:id/sevenZRadio", 
+      "text": ".7z", 
+      "editable": false, 
+      "visible": true, 
+      "is_password": false, 
+      "focused": false, 
+      "clickable": true, 
+      "checkable": true, 
+      "size": "175*70", 
+      "scrollable": false, 
+      "checked": false, 
+      "package": "me.zhanghai.android.files", 
+      "long_clickable": false, 
+      "selected": false, 
+      "enabled": true, 
+      "bounds": [
+        [
+          442, 
+          831
+        ], 
+        [
+          617, 
+          901
+        ]
+      ], 
+      "class": "android.widget.RadioButton", 
+      "focusable": true
+    }, 
+    "id": 3, 
+    "event_type": "touch"
+  }, 
+  "start_state": "6f2dc4db83ddbdd45d13695c1213a790"
+}

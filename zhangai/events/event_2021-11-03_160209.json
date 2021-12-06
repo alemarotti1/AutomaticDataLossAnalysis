@@ -1,0 +1,89 @@
+{
+  "stop_state": "81dabfc544f700851461e73a5b787e55", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_160209", 
+  "event": {
+    "views_str": [
+      "2cb863d7bb11a30886fe6a0b26e421bd", 
+      "1db29908362fbb8172ae4aff4008f261"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/switchWidget", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "82*47", 
+        "checked": false, 
+        "temp_id": 33, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.Switch[resource_id]me.zhanghai.android.files:id/switchWidget", 
+        "is_password": false, 
+        "parent": 32, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.Switch", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "2cb863d7bb11a30886fe6a0b26e421bd", 
+        "enabled": true, 
+        "bounds": [
+          [
+            610, 
+            521
+          ], 
+          [
+            692, 
+            568
+          ]
+        ], 
+        "signature": "[class]android.widget.Switch[resource_id]me.zhanghai.android.files:id/switchWidget[text]None[enabled,,]"
+      }, 
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/switchWidget", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "82*47", 
+        "checked": true, 
+        "temp_id": 38, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.Switch[resource_id]me.zhanghai.android.files:id/switchWidget", 
+        "is_password": false, 
+        "parent": 37, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.Switch", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "1db29908362fbb8172ae4aff4008f261", 
+        "enabled": true, 
+        "bounds": [
+          [
+            610, 
+            615
+          ], 
+          [
+            692, 
+            662
+          ]
+        ], 
+        "signature": "[class]android.widget.Switch[resource_id]me.zhanghai.android.files:id/switchWidget[text]None[enabled,checked,]"
+      }
+    ]
+  }, 
+  "start_state": "81dabfc544f700851461e73a5b787e55"
+}

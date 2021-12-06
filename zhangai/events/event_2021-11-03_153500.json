@@ -1,0 +1,12 @@
+{
+  "stop_state": "1bc676b8650c72f7ec2f8410b806be74", 
+  "event_str": "DoubleRotationEvent", 
+  "tag": "2021-11-03_153500", 
+  "event": {
+    "event_type": [
+      "double_rotation"
+    ], 
+    "view": null
+  }, 
+  "start_state": "1bc676b8650c72f7ec2f8410b806be74"
+}

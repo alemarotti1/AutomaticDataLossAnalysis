@@ -1,0 +1,51 @@
+{
+  "stop_state": "555506bb912b10ad402cbf1ed1697172", 
+  "event_str": "FillUIEvent", 
+  "tag": "2021-11-03_151333", 
+  "event": {
+    "views_str": [
+      "82896dc7a707acd65a9d0e22cc7a92f9"
+    ], 
+    "event_type": "fill_UI", 
+    "views": [
+      {
+        "content_description": null, 
+        "resource_id": "me.zhanghai.android.files:id/checkbox", 
+        "text": null, 
+        "visible": true, 
+        "checkable": true, 
+        "children": [], 
+        "size": "56*56", 
+        "checked": false, 
+        "temp_id": 23, 
+        "selected": false, 
+        "child_count": 0, 
+        "content_free_signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox", 
+        "is_password": false, 
+        "parent": 20, 
+        "focusable": false, 
+        "editable": false, 
+        "focused": false, 
+        "clickable": false, 
+        "class": "android.widget.CheckBox", 
+        "scrollable": false, 
+        "package": "me.zhanghai.android.files", 
+        "long_clickable": false, 
+        "view_str": "82896dc7a707acd65a9d0e22cc7a92f9", 
+        "enabled": true, 
+        "bounds": [
+          [
+            611, 
+            426
+          ], 
+          [
+            667, 
+            482
+          ]
+        ], 
+        "signature": "[class]android.widget.CheckBox[resource_id]me.zhanghai.android.files:id/checkbox[text]None[enabled,,]"
+      }
+    ]
+  }, 
+  "start_state": "df02c26e5a78ec66372a4f305cc91eb6"
+}
