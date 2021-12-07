@@ -1,5 +1,7 @@
 import threading
-import concurrent.futures
+#import concurrent.futures
+import Database
+#import ModelController
 
 #import ModelController
 import Gui
@@ -7,16 +9,18 @@ import Gui
 
 
 def main():
-    #modelThread = threading.Thread(target=ModelController.startModel, args=(), daemon=True)
+    #mc = ModelController()
+    #modelThread = threading.Thread(target=mc.startModel, args=(), daemon=True)
     #modelThread.start()
 
-    #guiThread = threading.Thread(target=Gui.startWebview, args=(), daemon=True)
+    #guiThread = threading.Thread(target=Gui.startWebView, args=(), daemon=True)
     #guiThread.start()
+    
+    print(Database.get_database())
     
     #modelThread.join()
     #guiThread.join()
     
-    Gui.startWebView()
 
 
 
