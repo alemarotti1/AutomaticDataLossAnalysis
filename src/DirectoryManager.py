@@ -51,15 +51,21 @@ def get_list_from_project(project):
     list : list
         list of all names of the files in the project
     """
-
     dir = get_project_directory() / project / 'dataloss'
     var_instances =  [x for x in dir.iterdir() if x.is_dir()]
-    #iterate over all instances and get the list of files
+    
+    #iterating over all instances and get the list of files
     files = []
     for instance in var_instances:
         files.extend([x for x in instance.iterdir() if x.is_file()])
-    #pass the name of the files through a regex in the following format: "4digits-2digits-2digits space 2digits-2digits-2digits"
+    
+    
+    #passing the name of the files through a regex in the following format: "4digits-2digits-2digits space 2digits-2digits-2digits"
+    #to remove the "_before.*" and "_after.*" and "_view.*"
     files = [re.findall(r'\d{4}-\d{2}-\d{2} \d{2}-\d{2}-\d{2}', x.name)[0] for x in files]
+
+    #trasforming the list to set then to list again to remove duplicates
+    files = list(set(files))
     return files
 
 
