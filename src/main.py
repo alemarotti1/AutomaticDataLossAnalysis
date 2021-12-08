@@ -12,6 +12,11 @@ mc = ModelController()
 @eel.expose
 def get_projects():
     return mc.get_projects()
+
+
+@eel.expose
+def get_project_data(project):
+    return mc.get_project_data(project)
     
 
 def main():
