@@ -1,30 +1,35 @@
 import threading
+import eel
 #import concurrent.futures
 import Database
-#import ModelController
+from ModelController import ModelController
 
 #import ModelController
 import Gui
 
+mc = ModelController()
 
+@eel.expose
+def get_projects():
+    return mc.get_projects()
+    
 
 def main():
-    #mc = ModelController()
-    #modelThread = threading.Thread(target=mc.startModel, args=(), daemon=True)
-    #modelThread.start()
+    # mc = ModelController()
+    # modelThread = threading.Thread(target=mc.startModel, args=(), daemon=True)
+    # modelThread.start()
 
-    #guiThread = threading.Thread(target=Gui.startWebView, args=(), daemon=True)
-    #guiThread.start()
+    guiThread = threading.Thread(target=Gui.startWebView, args=(), daemon=True)
+    guiThread.start()
     
     print(Database.get_database())
     
     #modelThread.join()
-    #guiThread.join()
-    
+    guiThread.join()
 
 
 
 
-#create a main that will run the program
+#a main that will run the program
 if __name__ == '__main__':
     main()

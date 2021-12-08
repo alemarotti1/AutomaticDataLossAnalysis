@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
         <!-- importing eel necessary lib-->
-        <script type=”text/javascript” src=”/eel.js”></script>
+        <script type="text/javascript" src="/eel.js"></script>
 
 
         
@@ -35,8 +35,23 @@
             </div>
         </nav>
 
-
+        <!-- bootstrap table of content to hold the projects -->
+        <table class="table table-striped" id="Projects">
+            <thead>
+                <tr>
+                    <th scope="col">Project</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Select</th>
+                </tr>
+            </thead>
+            <tbody id="projects-body">
+                <tr>
+                    <td colspan="3" class="text-center"><h1>Loading</h1></td>
+                </tr>
+            </tbody>
+        </table>
         
     </body>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
