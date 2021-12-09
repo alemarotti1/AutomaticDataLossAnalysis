@@ -42,3 +42,12 @@ class ModelController:
             #trasform from json to list
             json_list = json.load(file)
         return json_list
+
+    
+    def activate_project(self, project):
+        del(self.database)
+        self.database = Database.Database()
+        project_data = self.get_project_data(project)
+        self.database.init_project(project_data)
+        return project_data
+    
