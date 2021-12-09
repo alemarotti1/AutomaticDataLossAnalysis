@@ -29,14 +29,16 @@ class ModelController:
             file = open(DirectoryManager.get_project_directory()/project/"state.json", "w+")
             #trasform from json to list
             list = DirectoryManager.get_list_from_project(project)
+            json_list = {'file_list': []}
             for x in list:
                 #create dict
                 dict = {"file": x, "evaluation": -1, "state": "unknown"}
                 #write dict to file
-                file.write(json.dumps(dict))
+                json_list.append(json_list["file_list"].append(dict))
+            file.write(json.dumps(json_list))
 
         else:
             file = open(DirectoryManager.get_project_directory()/project/"state.json", "w+")
             #trasform from json to list
-            data = json.load(file)
-        return 
+            json_list = json.load(file)
+        return json_list
