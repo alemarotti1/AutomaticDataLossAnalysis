@@ -1,12 +1,12 @@
 import tensorflow as tf
 
 class ImageModel:
-    def __init__(self) -> None:
+    def __init__(self, shape) -> None:
         weights = 'imagenet'
         # 3 classes on our classifier
         n_classes = 2
         # Dimensions from the image after being resized
-        shape = [720, 1712, 3]
+        shape = shape
 
         trained_model = tf.keras.applications.xception.Xception(
                         include_top=False,

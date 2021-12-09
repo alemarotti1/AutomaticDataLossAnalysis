@@ -5,7 +5,8 @@ class Model:
     MODEL_NAME = 'model.h5'
     def __init__(self, config):
         self.config = config
-        self.model = None
+        self.modelImage1 = None
+        self.modelImage2 = None
         self.history = None
         self.model_path = None
 
