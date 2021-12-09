@@ -34,24 +34,55 @@
                 </ul>
             </div>
         </nav>
+        <div id="model-status" style="float: left; width: 27vw; height: 90vh;">
+            <!--create a boostrap table-->
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th colspan="3" scope="col" style="text-align: center;"><h3 style="font-weight: bolder;">Models</h3></th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Model</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Activate</th>
+                    </tr>
+                </thead>
+                <tbody id="model-status-table">
+                    <tr>
+                        <td colspan="3" style="text-align: center;"><button type="button" class="btn btn-primary" id="create-model">Create Model</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <!-- bootstrap table of content to hold the projects -->
-        <table class="table table-striped" id="Projects">
-            <thead>
-                <tr>
-                    <th scope="col">Project</th>
-                    <th scope="col">State</th>
-                    <th scope="col">Select</th>
-                </tr>
-            </thead>
-            <tbody id="projects-body">
-                <tr>
-                    <td colspan="3" class="text-center"><h1>Loading</h1></td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="project-status" style="float: right; width: 70vw; height: 90vh;">
+            <div style="background-color: darkgray; padding: 5px;"> 
+                <button id="btn-start-project" class="btn btn-primary">Confirmar escolha</button>
+                <button id="btn-start-project" class="btn btn-primary">Tirar Duvida</button>
+            </div>
+            <div id="project-status-table" style="height: 90vh; overflow-y: scroll;">
+                <table class="table table-striped" style="max-width: 70vw;">
+                    <thead>
+                        <tr>
+                            <th scope="col">Image</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Certainty</th>
+                        </tr>
+                    </thead>
+                    <tbody id="project-status-list">
+                        <tr>
+                            <td colspan="3" style="text-align: center;"><h1>Select a Model</h1></td>
+                            <!--td style="white-space: nowrap; overflow:hidden;text-overflow: ellipsis; width: 30vw;">2021-11-03 15-13-18_after.png</td>
+                            <td></td>
+                            <td></td-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         
     </body>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/project.js"></script>
 </html>

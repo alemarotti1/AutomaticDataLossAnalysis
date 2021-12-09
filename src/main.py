@@ -1,7 +1,6 @@
 import threading
 import eel
 #import concurrent.futures
-import Database
 from ModelController import ModelController
 
 #import ModelController
@@ -21,6 +20,28 @@ def get_project_data(project):
 def receive_feedback(img_name,feedback):
     return mc.get_feedback(img_name, feedback)
 
+@eel.expose
+def activate_project(project):
+    var = mc.activate_project(project)
+    return var
+
+@eel.expose
+def get_images(image_name):
+    return mc.get_images(image_name)
+
+@eel.expose
+def create_model():
+    return mc.create_model()
+
+@eel.expose
+def get_model_data(model):
+    return mc.get_model_data(model)
+
+@eel.expose
+def get_models():
+    return mc.get_models()
+
+
 def main():
     # mc = ModelController()
     # modelThread = threading.Thread(target=mc.startModel, args=(), daemon=True)
@@ -29,7 +50,6 @@ def main():
     guiThread = threading.Thread(target=Gui.startWebView, args=(), daemon=True)
     guiThread.start()
     
-    print(Database.get_database())
     
     #modelThread.join()
     guiThread.join()

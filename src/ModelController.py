@@ -3,6 +3,7 @@ import Database
 import DirectoryManager
 import os
 import json
+import base64
 
 
 
@@ -12,7 +13,8 @@ class ModelController:
 
     def __init__(self):
         config = []
-        self.model = Model.Model(config=config)
+        self.model = None
+        self.database = None
     
     def startModel(self):
         #self.model.start()
@@ -23,37 +25,67 @@ class ModelController:
         varDir = DirectoryManager.get_all_projects()
         return [y.name for y in varDir]
 
-
-    def get_project_data(self, project):
-        if(not os.path.isfile(DirectoryManager.get_project_directory()/project/"state.json")):
-            file = open(DirectoryManager.get_project_directory()/project/"state.json", "w+")
-            #trasform from json to list
-            list = DirectoryManager.get_list_from_project(project)
-            json_list = {'file_list': []}
-            for x in list:
-                #create dict
-                dict = {"file": x, "evaluation": -1, "state": "unknown"}
-                #write dict to file
-                json_list.append(json_list["file_list"].append(dict))
-            file.write(json.dumps(json_list))
-
-        else:
-            file = open(DirectoryManager.get_project_directory()/project/"state.json", "w+")
-            #trasform from json to list
-            json_list = json.load(file)
-        return json_list
-
     
     def activate_project(self, project):
-        del(self.database)
-        self.database = Database.Database()
-        project_data = self.get_project_data(project)
-        self.database.init_project(project_data)
-        return project_data
+        self.active_project = project
+        return True
     
-    def get_feedback (self, img_name, feedback):
+    def get_feedback(self, img_name, feedback):
         try:
             self.database.update_database(img_name, feedback)
             return True
         except e:
             return False
+    
+    def get_images(self, image_name):
+        return_val = {"before": "", "after": "", "view": ""}
+        path = sorted((DirectoryManager.get_project_directory()/self.active_project/"dataloss").glob(image_name))
+        return_val["before"] = base64.b64encode(open(path[0], "rb").read()).decode("utf-8")
+        return_val["after"] = base64.b64encode(open(path[1], "rb").read()).decode("utf-8")
+        return_val["view"] = open(path[2], "r").read()
+
+        return return_val
+    
+    def get_models(self):
+        """ get the list of models for the active project
+
+        Returns:
+            list -- list of models
+        """
+        if(self.active_project is None):
+            return []
+        #get all folders from (DirectoryManager.get_project_directory()/self.active_project/"modelos")
+        model_folder_list = [x.name for x in (DirectoryManager.get_project_directory()/self.active_project/"modelos").iterdir() if x.is_dir()]
+        model_list = []
+
+        for model in model_folder_list:
+            #get the number of rights, wrongs and unknowns
+            model_folder = DirectoryManager.get_project_directory()/self.active_project/"modelos"/model
+            state = json.load(open(model_folder/"state.json"))
+            state["name"] = model
+            model_list.append(state)
+        return model_list
+
+
+    def create_model(self):
+        """ create a new model for the active project 
+
+        Returns:
+            bool -- True if the model was created, False otherwise
+        """
+        try:
+            model_num = len(self.get_models())
+            model_name = "model"+str(model_num)
+
+            #create model folder
+            model_folder = DirectoryManager.get_project_directory()/self.active_project/"modelos"/model_name
+        
+            model_folder.mkdir()
+            
+            config = {"model_name": model_name, "number_of_rights": 0, "number_of_wrongs": 0, "number_of_unknowns": 0}
+            self.model = Model.Model(config, model_folder)
+
+        except Exception as e:
+            print(e)
+            return False
+        return True
