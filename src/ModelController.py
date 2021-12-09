@@ -42,3 +42,10 @@ class ModelController:
             #trasform from json to list
             json_list = json.load(file)
         return json_list
+
+    def get_feedback (self, img_name, feedback):
+        try:
+            self.database.update_database(img_name, feedback)
+            return True
+        except e:
+            return False
