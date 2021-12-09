@@ -51,3 +51,9 @@ class ModelController:
         self.database.init_project(project_data)
         return project_data
     
+    def get_feedback (self, img_name, feedback):
+        try:
+            self.database.update_database(img_name, feedback)
+            return True
+        except e:
+            return False

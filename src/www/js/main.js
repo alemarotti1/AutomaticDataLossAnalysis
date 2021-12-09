@@ -8,6 +8,18 @@ $(document).ready(function () {
         activate_button_On();
     });
 
+    //lista de projetos
+    //eel.get_all_projects()(function (projects){});
+
+    //dados do modelo de cada projeto
+    //eel.get_list_from_project({});
+    //(project)
+
+    //feedback from user, used to update database and model
+    eel.receive_feedback (image_id, feedback)((returnVal)=>{
+        if(returnVal)alert("sucesso");
+         else alert ("falha ao atualizar feedback")})
+    
 });
 
 function activate_button_On(){

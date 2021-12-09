@@ -13,11 +13,13 @@ mc = ModelController()
 def get_projects():
     return mc.get_projects()
 
-
 @eel.expose
 def get_project_data(project):
     return mc.get_project_data(project)
-    
+
+@eel.expose
+def receive_feedback(img_name,feedback):
+    return mc.get_feedback(img_name, feedback)
 
 def main():
     # mc = ModelController()
