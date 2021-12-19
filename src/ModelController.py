@@ -1,7 +1,5 @@
 import Model
-import Database
 import DirectoryManager
-import os
 import json
 import base64
 
@@ -30,18 +28,40 @@ class ModelController:
         self.active_project = project
         return True
     
+    def activate_model(self, model_name):
+        """ activate a model for the active project
+
+        Arguments:
+            model_name {str} -- name of the model to activate
+
+        Returns:
+            bool -- True if the model was activated, False otherwise
+        """
+        try:
+            model_folder = DirectoryManager.get_project_directory()/self.active_project/"modelos"/model_name
+            config = json.load(open(model_folder/"state.json"))
+            self.model = Model.Model(config, model_folder)
+        except Exception as e:
+            print(e)
+            return False
+        return True
+
+    
     def get_feedback(self, img_name, feedback):
         try:
-            self.database.update_database(img_name, feedback)
+            self.model.update_image_feedback(img_name, feedback)
             return True
-        except e:
+        except Exception as e:
+            print(e)
             return False
     
     def get_images(self, image_name):
         return_val = {"before": "", "after": "", "view": ""}
-        path = sorted((DirectoryManager.get_project_directory()/self.active_project/"dataloss").glob(image_name))
-        return_val["before"] = base64.b64encode(open(path[0], "rb").read()).decode("utf-8")
-        return_val["after"] = base64.b64encode(open(path[1], "rb").read()).decode("utf-8")
+        path = sorted((DirectoryManager.get_project_directory()/self.active_project/"dataloss").glob("*/"+image_name+"*.*"))
+        print(image_name+"*.*")
+        print(path)
+        return_val["after"] = base64.b64encode(open(path[0], "rb").read()).decode("utf-8")
+        return_val["before"] = base64.b64encode(open(path[1], "rb").read()).decode("utf-8")
         return_val["view"] = open(path[2], "r").read()
 
         return return_val

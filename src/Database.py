@@ -1,13 +1,20 @@
+from genericpath import exists
+from re import I
 import DirectoryManager
 import pathlib
 import os
 import json
+import PIL
+import numpy as np
 
 class Database:
     def __init__(self, path, model_name):
-        state = self.get_project_data(path, model_name)
+        state, exists = self.get_project_data(path, model_name)
         self.change_level = 0
+        self.path = path
         self.database = state
+        if(exists):
+            pass
         
 
     def get_database(self):
@@ -28,6 +35,7 @@ class Database:
         return []
     
     def get_project_data(self, path, model):
+        exists = False
         print("Getting project data")
         print(path)
         file = (path/("state.json"))
@@ -52,4 +60,5 @@ class Database:
             file_json = open(file, "r+")
             #trasform from json to list
             json_list = json.load(file_json)
-        return json_list
+            exists = True
+        return json_list, exists

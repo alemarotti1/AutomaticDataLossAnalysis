@@ -4,7 +4,7 @@ class ImageModel:
     def __init__(self, shape, model=None):
         if model is None:
             weights = 'imagenet'
-            # 3 classes on our classifier
+            # 2 classes on our classifier
             n_classes = 2
             # Dimensions from the image after being resized
             shape = shape

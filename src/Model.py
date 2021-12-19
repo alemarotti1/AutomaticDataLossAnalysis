@@ -16,3 +16,13 @@ class Model:
 
     def train():
         pass
+    
+    def predict(self, image):
+        
+        return self.modelImage1.predict(image)
+    
+    def update_image_feedback(self, image, feedback):
+        print("Updating image feedback")
+        print(feedback)
+        print(image)
+        #self.database.update_image_feedback(image, feedback)

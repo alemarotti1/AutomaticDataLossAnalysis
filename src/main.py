@@ -26,6 +26,10 @@ def activate_project(project):
     return var
 
 @eel.expose
+def activate_model(model):
+    mc.activate_model(model)
+
+@eel.expose
 def get_images(image_name):
     return mc.get_images(image_name)
 
@@ -40,6 +44,18 @@ def get_model_data(model):
 @eel.expose
 def get_models():
     return mc.get_models()
+
+@eel.expose
+def get_image(image):
+    return mc.get_images(image)
+
+@eel.expose
+def update_image(image, data):
+    try:
+        return mc.get_feedback(image, data)
+    except Exception as e:
+        print(e)
+        return False
 
 
 def main():
