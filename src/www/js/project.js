@@ -72,31 +72,42 @@ function update_images(){
         selected_model = i;
         let model = models[i];
         alert(model.name);
-        eel.activate_model(model.name)();
+        eel.activate_model(model.name)(function (data) {
+            if(data){
+                $("#project-status-list").empty();
+                alert("Model activated successfully");
+
+                for(var j = 0; j < model.file_list.length; j++){
+                    $("#project-status-list").append(
+                        '<tr style="text-align:center" class="project-status" id="'+model.file_list[j].file+'">'+
+                            '<td style="white-space: nowrap; overflow:hidden;text-overflow: ellipsis; width: 30vw; background-color: darkgray;">'+model.file_list[j].file+'</td>'+
+                            '<td>TBD</td>'+
+                            '<td style="background-color: darkgray;">TBD</td>'+
+                        '</tr>'
+                    );
+                }
+
+                $(".project-status").click(function (e) {
+                    let file = $(this).attr("id");
+                    
         
-        $("#project-status-list").empty();
-        for(var j = 0; j < model.file_list.length; j++){
-            $("#project-status-list").append(
-                '<tr style="text-align:center" class="project-status" id="'+model.file_list[j].file+'">'+
-                    '<td style="white-space: nowrap; overflow:hidden;text-overflow: ellipsis; width: 30vw; background-color: darkgray;">'+model.file_list[j].file+'</td>'+
-                    '<td>TBD</td>'+
-                    '<td style="background-color: darkgray;">TBD</td>'+
-                '</tr>'
-            );
-        }
-
-        $(".project-status").click(function (e) {
-            let file = $(this).attr("id");
-            
-
-            eel.get_image(file)(function (data) {
-                $("#before").attr('src', 'data:image/png;base64,'+data.before);
-                $("#after").attr('src', 'data:image/png;base64,'+data.after);
-                selected_image = file;
-                
-            });
-            $(".modal-img").show();
+                    eel.get_image(file)(function (data) {
+                        $("#before").attr('src', 'data:image/png;base64,'+data.before);
+                        $("#after").attr('src', 'data:image/png;base64,'+data.after);
+                        selected_image = file;
+                        
+                    });
+                    $(".modal-img").show();
+                });
+            }
+            else{
+                alert("Error in activating model");
+            }
         });
+        
+        
+
+        
     });
 }
 
@@ -133,3 +144,10 @@ function update_image(image, val){
         }
     });
 }
+
+
+$(document).ready(function () {
+    $("#btn-start-prediction").click(function (e) {
+        eel.start_prediction()();
+    });
+});

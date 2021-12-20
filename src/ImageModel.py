@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+
 class ImageModel:
     def __init__(self, shape, model=None):
         if model is None:
@@ -24,7 +25,14 @@ class ImageModel:
             self.model = model
     
     def predict(self, image):
-        return self.model.predict(image)
+        print("##############################")
+        print("Predicting image: shape = {}".format(image.shape))
+        
+        image = image.reshape(1, image.shape[0], image.shape[1], image.shape[2])
+        predict = self.model.predict(image)
+        print("Prediction: {}".format(predict))
+        print("##############################")
+        return [predict[0][0], predict[0][1]]
     
     def update_weights_based_on_loss(self, image, loss):
         self.model.fit(image, loss)

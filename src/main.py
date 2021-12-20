@@ -3,7 +3,7 @@ import eel
 #import concurrent.futures
 from ModelController import ModelController
 
-#import ModelController
+
 import Gui
 
 mc = ModelController()
@@ -27,7 +27,13 @@ def activate_project(project):
 
 @eel.expose
 def activate_model(model):
-    mc.activate_model(model)
+    print("Activating model: " + model)
+    try:
+        mc.activate_model(model)
+        return True
+    except Exception as e:
+        print("Error activating model: " + str(e))
+        return False
 
 @eel.expose
 def get_images(image_name):
@@ -47,6 +53,7 @@ def get_models():
 
 @eel.expose
 def get_image(image):
+    print("requested image: " + image)
     return mc.get_images(image)
 
 @eel.expose
@@ -55,7 +62,11 @@ def update_image(image, data):
         return mc.get_feedback(image, data)
     except Exception as e:
         print(e)
-        return False
+        return False 
+
+def predict(image):
+    return mc.predict(image)
+
 
 
 def main():

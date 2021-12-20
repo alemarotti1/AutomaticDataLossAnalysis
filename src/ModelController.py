@@ -2,6 +2,8 @@ import Model
 import DirectoryManager
 import json
 import base64
+import PIL
+import numpy as np
 
 
 
@@ -39,8 +41,11 @@ class ModelController:
         """
         try:
             model_folder = DirectoryManager.get_project_directory()/self.active_project/"modelos"/model_name
-            config = json.load(open(model_folder/"state.json"))
+            #config = json.load(open(model_folder/"state.json"))
+            print("creating model "+ model_name+ " with folder: " + str(model_folder))
+            config = {"model_name": model_name}
             self.model = Model.Model(config, model_folder)
+            print("model created ")
         except Exception as e:
             print(e)
             return False
@@ -109,3 +114,51 @@ class ModelController:
             print(e)
             return False
         return True
+
+    def predict(self, image):
+        """ predict the type of the image
+
+        Arguments:
+            image {str} -- image to predict
+        
+        Returns:
+            str -- the prediction
+        """
+
+        return_val = {"before": "", "after": "", "view": ""}
+        path = sorted((DirectoryManager.get_project_directory()/self.active_project/"dataloss").glob("*/"+image+"*.*"))
+        print(image+"*.*")
+        print(path)
+
+        image_after = PIL.Image.open(path[0])
+        image_after_table = np.array(image_after)
+        image_before = PIL.Image.open(path[1])
+        image_before_table = np.array(image_before)
+
+        
+        #diff between the images
+        diff = image_after_table - image_before_table
+        
+        #remove the alpha channel
+        diff = diff[:,:,:3]
+
+        #normalize the images
+        new_image = diff/255
+
+
+        print(new_image.shape)
+
+
+        
+
+        # return_val["after"] = base64.b64encode(open(path[0], "rb").read()).decode("utf-8")
+        # return_val["before"] = base64.b64encode(open(path[1], "rb").read()).decode("utf-8")
+        # return_val["view"] = open(path[2], "r").read()
+        # print(return_val["after"])
+        
+        result = self.model.predict(new_image)
+        print("result: "+str(result))
+        print(type(result))
+        
+        
+        return result
