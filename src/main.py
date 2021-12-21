@@ -74,6 +74,10 @@ def start_prediction():
     thread = threading.Thread(target=mc.predict_model, args=(), daemon=True)
     thread.start()
 
+@eel.expose
+def stop_prediction():
+    print("Stopping prediction")
+    mc.running = False
 
 def main():
     # mc = ModelController()

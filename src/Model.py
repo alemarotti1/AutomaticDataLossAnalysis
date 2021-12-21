@@ -1,12 +1,21 @@
 from ImageModel import ImageModel
 import Database
+import os
 
 #define a class named model with a constructor and a method named train
 class Model:
     MODEL_NAME = 'model.h5'
     def __init__(self, config, folder, state={""}):
         self.config = config
-        self.modelImage1 = ImageModel(shape = [1712, 720, 3], model = None)
+
+        model1 = None
+        #check if the model exists at folder ../model/model.h5
+        if os.path.isfile("../model/"+config.model_name):
+            print("Loading model")
+            self.modelImage1 = ImageModel(shape = [1712, 720, 3], model = "../model/"+config.model_name)
+        else:
+            print("Creating model")
+            self.modelImage1 = ImageModel(shape = [1712, 720, 3], model=None)
         self.modelImage2 = None
         self.modelText = None
         self.model_path = folder

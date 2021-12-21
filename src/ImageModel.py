@@ -22,7 +22,7 @@ class ImageModel:
             self.model.add(tf.keras.layers.Flatten())
             self.model.add(tf.keras.layers.Dense(n_classes, activation='softmax'))
         else:
-            self.model = model
+            self.model = self.load_model(model)
     
     def predict(self, image):
         print("##############################")

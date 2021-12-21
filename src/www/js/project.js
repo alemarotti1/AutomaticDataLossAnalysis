@@ -148,7 +148,19 @@ function update_image(image, val){
 
 $(document).ready(function () {
     $("#btn-start-prediction").click(function (e) {
-        eel.start_prediction()();
+        eel.start_prediction()(function (data) {
+            $("#btn-stop-prediction").show();
+            $("#btn-start-prediction").hide();
+        });
+    });
+
+    $("#btn-stop-prediction").click(function (e) {
+
+        eel.stop_prediction()( (data) => {
+            $("#btn-stop-prediction").hide();
+            $("#btn-start-prediction").show();
+        });
         
+
     });
 });

@@ -15,6 +15,7 @@ class ModelController:
         config = []
         self.model = None
         self.database = None
+        self.running = False
     
     def startModel(self):
         #self.model.start()
@@ -160,13 +161,19 @@ class ModelController:
         Returns:
             true if the prediction was successful, false otherwise
         """
+
+        self.running = True
+
         image_list = self.model.database.database
         for image in image_list["file_list"]:
+            if not self.running:
+                break
             if image["evaluation"] != 1:
                 image_array = self.convert_image_path(image["file"])
                 result = self.model.predict(image_array)
                 self.model.update_image_prediction(image["file"], result)
         
+        self.running = False
     
     
     def convert_image_path(self, image_name):

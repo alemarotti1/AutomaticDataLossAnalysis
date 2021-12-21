@@ -1,0 +1,143 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d83d323 com.dozingcatsoftware.mouse_pounce/.MainActivity filter b87c020
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Key Set Manager:
+  [com.dozingcatsoftware.mouse_pounce]
+      Signing KeySets: 103
+
+Packages:
+  Package [com.dozingcatsoftware.mouse_pounce] (b28b796):
+    userId=10325
+    pkg=Package{b9110be com.dozingcatsoftware.mouse_pounce}
+    codePath=/data/app/~~LoVKPvwlFs_3sW9Kx8SiYg==/com.dozingcatsoftware.mouse_pounce-hx3DPIJqVdSTz4sGlmYkzA==
+    resourcePath=/data/app/~~LoVKPvwlFs_3sW9Kx8SiYg==/com.dozingcatsoftware.mouse_pounce-hx3DPIJqVdSTz4sGlmYkzA==
+    legacyNativeLibraryDir=/data/app/~~LoVKPvwlFs_3sW9Kx8SiYg==/com.dozingcatsoftware.mouse_pounce-hx3DPIJqVdSTz4sGlmYkzA==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=5 minSdk=16 targetSdk=30
+    versionName=1.2.1
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{b9110be com.dozingcatsoftware.mouse_pounce}
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    queriesPackages=[]
+    dataDir=/data/user/0/com.dozingcatsoftware.mouse_pounce
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2021-11-04 22:44:31
+    firstInstallTime=2021-11-04 22:44:31
+    lastUpdateTime=2021-11-04 22:44:31
+    signatures=PackageSignatures{d2351f version:3, signatures:[93b8f68b], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP ]
+    User 0: ceDataInode=13790 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=true enabled=0 instant=false virtual=false
+    overlay paths:
+      /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via package name:
+  queries via intent:
+    com.motorola.gamemode:
+      com.dozingcatsoftware.mouse_pounce
+    com.motorola.actions:
+      com.dozingcatsoftware.mouse_pounce
+  queryable via interaction:
+    User 0:
+
+Package Changes:
+  Sequence number=734
+  User 0:
+    seq=0, package=com.motorola.msimsettings
+    seq=5, package=com.android.stk
+    seq=20, package=com.google.android.partnersetup
+    seq=42, package=com.google.android.syncadapters.contacts
+    seq=164, package=com.motorola.gamemode
+    seq=264, package=com.motorola.paks
+    seq=273, package=com.google.android.setupwizard
+    seq=286, package=com.motorola.audiofx
+    seq=297, package=com.google.android.apps.pixelmigrate
+    seq=300, package=com.motorola.coresettingsext
+    seq=312, package=com.google.android.as
+    seq=323, package=com.android.shell
+    seq=324, package=com.android.settings
+    seq=331, package=android.autoinstalls.config.motorola.layout
+    seq=386, package=org.gateshipone.malp
+    seq=396, package=com.google.android.gms
+    seq=399, package=com.google.android.webview
+    seq=400, package=com.android.chrome
+    seq=401, package=com.google.android.trichromelibrary_460608533
+    seq=402, package=com.google.android.apps.wellbeing
+    seq=418, package=com.google.android.marvin.talkback
+    seq=425, package=com.google.android.deskclock
+    seq=431, package=com.google.android.calculator
+    seq=433, package=com.google.android.apps.nbu.files
+    seq=458, package=com.motorola.livewallpaper3
+    seq=470, package=com.google.android.gm
+    seq=471, package=com.zegoggles.smssync
+    seq=475, package=com.google.android.videos
+    seq=478, package=com.google.android.inputmethod.latin
+    seq=479, package=com.google.android.calendar
+    seq=497, package=org.calyxinstitute.vpn
+    seq=521, package=pro.oblivioncoding.fluffy_board
+    seq=529, package=pc.javier.actualizadoropendns
+    seq=544, package=com.google.ar.core
+    seq=554, package=com.minar.birday
+    seq=562, package=ir.mrahimy.conceal
+    seq=570, package=org.dyndns.warenix.web2pdf
+    seq=599, package=com.mattieapps.roommates
+    seq=619, package=com.google.android.dialer
+    seq=633, package=ch.logixisland.anuto
+    seq=639, package=io.neurolab
+    seq=645, package=com.google.android.contacts
+    seq=650, package=com.android.vending
+    seq=652, package=com.google.android.apps.tachyon
+    seq=655, package=com.etesync.syncadapter
+    seq=658, package=com.google.android.apps.youtube.music
+    seq=662, package=com.google.android.apps.messaging
+    seq=676, package=vocabletrainer.heinecke.aron.vocabletrainer
+    seq=682, package=me.zhanghai.android.files
+    seq=692, package=com.github.ruleant.getback_gps
+    seq=697, package=com.google.android.apps.photos
+    seq=700, package=com.google.android.projection.gearhead
+    seq=701, package=com.google.android.apps.subscriptions.red
+    seq=702, package=com.google.android.ims
+    seq=704, package=com.google.android.googlequicksearchbox
+    seq=706, package=com.google.android.apps.maps
+    seq=707, package=com.google.android.youtube
+    seq=715, package=com.github.ashutoshgngwr.tenbitclockwidget
+    seq=721, package=com.limelight
+    seq=727, package=com.google.android.tts
+    seq=729, package=org.wikipedia
+    seq=731, package=com.google.android.apps.docs
+    seq=732, package=io.github.ylimit.droidbotapp
+    seq=733, package=com.dozingcatsoftware.mouse_pounce
+
+
+Dexopt state:
+  [com.dozingcatsoftware.mouse_pounce]
+    path: /data/app/~~LoVKPvwlFs_3sW9Kx8SiYg==/com.dozingcatsoftware.mouse_pounce-hx3DPIJqVdSTz4sGlmYkzA==/base.apk
+      arm64: [status=speed-profile] [reason=install]
+
+
+Compiler stats:
+  [com.dozingcatsoftware.mouse_pounce]
+     base.apk - 389
+
+APEX session state:
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
