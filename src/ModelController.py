@@ -16,6 +16,7 @@ class ModelController:
         self.model = None
         self.database = None
         self.running = False
+        self.active_project = None
     
     def startModel(self):
         #self.model.start()
@@ -204,3 +205,12 @@ class ModelController:
         #normalize the images
         new_image = diff/255
         return new_image
+    
+    def update_model_bulk(self, image_list, result_list):
+        """ update the model with a bulk of images
+
+        Arguments:
+            image_list {list} -- list of image names
+            result_list {list} -- list of results
+        """
+        self.model.update_image_bulk(image_list, result_list)

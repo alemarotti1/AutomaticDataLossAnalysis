@@ -10,7 +10,7 @@ class Model:
 
         model1 = None
         #check if the model exists at folder ../model/model.h5
-        if os.path.isfile("../model/"+config.model_name):
+        if os.path.isfile("../model/"+config["model_name"]):
             print("Loading model")
             self.modelImage1 = ImageModel(shape = [1712, 720, 3], model = "../model/"+config.model_name)
         else:
@@ -40,8 +40,12 @@ class Model:
         print(image)
         self.database.update_database(image, "Confirmed", feedback)
 
+
     def update_image_prediction(self, image, prediction):
         self.database.update_database(image, "Predicted" ,prediction)
+    
+    def update_image_bulk(self, image_list, prediction_list):
+        self.modelImage1.update_image_bulk(image_list, prediction_list)
     
     def predict_model(self):
         self.running = True
@@ -60,3 +64,4 @@ class Model:
                 
 
             self.no_of_verified += 1
+    

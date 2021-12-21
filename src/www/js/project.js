@@ -49,7 +49,7 @@ function update_model_list(){
                 var percentage = (data[i].number_of_rights/(data[i].number_of_rights+data[i].number_of_wrongs))*100;
             else
                 var percentage = "TBD";
-                $("#model-status-table").append('<tr>'+
+            $("#model-status-table").append('<tr>'+
                 '<td class="model-name">'+data[i].name+'</td>'+
                 '<td class="model-status">'+percentage+'</td>'+
                 '<td class=""><button type="button" class="btn btn-primary model-activate" id="activate-model'+i+'">Activate</button></td>'+
@@ -71,11 +71,19 @@ function update_images(){
         i = parseInt(i);
         selected_model = i;
         let model = models[i];
-        alert(model.name);
+        let loading = '<tr>'+
+                            '<td colspan="3" style="text-align: center;"><h1>Loading...</h1></td>'+
+                        '</tr>';
+        $("#project-status-list").empty();
+        $("#project-status-list").append(loading);
+        
+        
         eel.activate_model(model.name)(function (data) {
             if(data){
                 $("#project-status-list").empty();
                 alert("Model activated successfully");
+
+                
 
                 for(var j = 0; j < model.file_list.length; j++){
                     $("#project-status-list").append(
@@ -162,5 +170,10 @@ $(document).ready(function () {
         });
         
 
+    });
+
+    $("#btn-refresh-project").click(function (e) {
+        alert("refresh");
+        //update_model_list();
     });
 });

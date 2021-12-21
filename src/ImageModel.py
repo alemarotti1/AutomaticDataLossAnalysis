@@ -21,9 +21,12 @@ class ImageModel:
             self.model.add(trained_model)
             self.model.add(tf.keras.layers.Flatten())
             self.model.add(tf.keras.layers.Dense(n_classes, activation='softmax'))
+            opt = tf.keras.optimizers.Adam(learning_rate=0.01)
+            self.model.compile(loss='categorical_crossentropy', optimizer=opt)
         else:
             self.model = self.load_model(model)
-    
+        
+
     def predict(self, image):
         print("##############################")
         print("Predicting image: shape = {}".format(image.shape))
@@ -34,8 +37,11 @@ class ImageModel:
         print("##############################")
         return [predict[0][0], predict[0][1]]
     
-    def update_weights_based_on_loss(self, image, loss):
-        self.model.fit(image, loss)
+    def update_weights(self, image, target):
+        self.model.fit(image, target, epochs=2, verbose=0)
+    
+    def update_image_bulk(self, image_list, prediction_list):
+        self.model.fit(image_list, prediction_list, epochs=100, verbose=0)
     
     def save_model(self, path):
         self.model.save(path)

@@ -79,6 +79,11 @@ def stop_prediction():
     print("Stopping prediction")
     mc.running = False
 
+@eel.expose
+def get_updated_model():
+    return mc.model.config
+
+
 def main():
     # mc = ModelController()
     # modelThread = threading.Thread(target=mc.startModel, args=(), daemon=True)
