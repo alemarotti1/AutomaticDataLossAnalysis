@@ -22,7 +22,7 @@ class Database:
 
     def update_database(self, id, state, evaluation):
         #for every file in the database whose name is id update the state and evaluation
-        map(lambda x: x if x["file"] != id else {"file": x["file"], "evaluation": evaluation, "state": state}, self.database["file_list"])
+        self.database["file_list"] = list(map(lambda x: x if x["file"] != id else {"file": x["file"], "evaluation": evaluation, "state": state}, self.database["file_list"]))
 
 
         #self.database["file_list"] [id]["evaluation"] = evaluation

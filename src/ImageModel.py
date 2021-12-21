@@ -10,6 +10,7 @@ class ImageModel:
             # Dimensions from the image after being resized
             shape = shape
 
+
             trained_model = tf.keras.applications.xception.Xception(
                             include_top=False,
                             weights=weights,
@@ -38,10 +39,11 @@ class ImageModel:
         return [predict[0][0], predict[0][1]]
     
     def update_weights(self, image, target):
-        self.model.fit(image, target, epochs=2, verbose=0)
+        self.model.fit(image, target, epochs=2, verbose=1)
     
     def update_image_bulk(self, image_list, prediction_list):
-        self.model.fit(image_list, prediction_list, epochs=100, verbose=0)
+        callback = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=3)
+        self.model.fit(image_list, prediction_list, batch_size=5, epochs=100, verbose=1, callbacks=[callback])
     
     def save_model(self, path):
         self.model.save(path)

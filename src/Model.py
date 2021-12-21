@@ -8,14 +8,16 @@ class Model:
     def __init__(self, config, folder, state={""}):
         self.config = config
 
+        #escalando a imagem para diminuir o tamanho do modelo
+        shape = [int(1712/2), int(720/2), 3]
         model1 = None
         #check if the model exists at folder ../model/model.h5
         if os.path.isfile("../model/"+config["model_name"]):
             print("Loading model")
-            self.modelImage1 = ImageModel(shape = [1712, 720, 3], model = "../model/"+config.model_name)
+            self.modelImage1 = ImageModel(shape = shape, model = "../model/"+config.model_name)
         else:
             print("Creating model")
-            self.modelImage1 = ImageModel(shape = [1712, 720, 3], model=None)
+            self.modelImage1 = ImageModel(shape = shape, model=None)
         self.modelImage2 = None
         self.modelText = None
         self.model_path = folder
@@ -32,17 +34,18 @@ class Model:
         model1 = self.modelImage1.predict(image)
 
         result = model1
-        return bool((result[0]>result[1]))
+        return [result[0], result[1]]
     
     def update_image_feedback(self, image, feedback):
         print("Updating image feedback")
         print(feedback)
         print(image)
-        self.database.update_database(image, "Confirmed", feedback)
+        self.database.update_database(image, "Verified", feedback)
 
 
     def update_image_prediction(self, image, prediction):
-        self.database.update_database(image, "Predicted" ,prediction)
+        temp_prediction = 0.5-prediction[0]
+        self.database.update_database(image, "Predicted", temp_prediction)
     
     def update_image_bulk(self, image_list, prediction_list):
         self.modelImage1.update_image_bulk(image_list, prediction_list)

@@ -169,7 +169,7 @@ class ModelController:
         for image in image_list["file_list"]:
             if not self.running:
                 break
-            if image["evaluation"] != 1:
+            if image["state"] != "Verified":
                 image_array = self.convert_image_path(image["file"])
                 result = self.model.predict(image_array)
                 self.model.update_image_prediction(image["file"], result)
@@ -191,8 +191,10 @@ class ModelController:
         print(path)
 
         image_after = PIL.Image.open(path[0])
+        image_after = image_after.resize((int(image_after.width//2), int(image_after.height//2)), PIL.Image.ANTIALIAS)
         image_after_table = np.array(image_after)
         image_before = PIL.Image.open(path[1])
+        image_before = image_before.resize((int(image_before.width//2), int(image_before.height//2)), PIL.Image.ANTIALIAS)
         image_before_table = np.array(image_before)
 
         

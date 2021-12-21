@@ -81,7 +81,7 @@ def stop_prediction():
 
 @eel.expose
 def get_updated_model():
-    return mc.model.config
+    return mc.model.database.database
 
 
 def main():
