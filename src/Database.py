@@ -20,7 +20,7 @@ class Database:
     def get_database(self):
         return self.database
 
-    def update_database(self, id, state):
+    def update_database(self, id, state, evaluation):
         #database[id] = state
         self.change_level += 1
         return self.change_level

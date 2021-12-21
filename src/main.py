@@ -67,6 +67,12 @@ def update_image(image, data):
 def predict(image):
     return mc.predict(image)
 
+@eel.expose
+def start_prediction():
+    print("##############################################################")
+    print("Starting prediction")
+    thread = threading.Thread(target=mc.predict_model, args=(), daemon=True)
+    thread.start()
 
 
 def main():

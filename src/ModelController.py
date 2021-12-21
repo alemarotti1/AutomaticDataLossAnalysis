@@ -27,8 +27,23 @@ class ModelController:
 
     
     def activate_project(self, project):
-        self.active_project = project
-        return True
+        """ set the active project to the given project
+
+        Arguments:
+            project {str} -- name of the project to activate
+
+        Returns:
+            bool -- True if the project was activated, False otherwise
+
+        """
+        try:
+            if (DirectoryManager.get_project_directory()/project).is_dir():
+                self.active_project = project
+                return True
+        except Exception as e:
+            print(e)
+            return False
+        return False
     
     def activate_model(self, model_name):
         """ activate a model for the active project
@@ -41,9 +56,9 @@ class ModelController:
         """
         try:
             model_folder = DirectoryManager.get_project_directory()/self.active_project/"modelos"/model_name
-            #config = json.load(open(model_folder/"state.json"))
+            config = json.load(open(model_folder/"state.json"))
             print("creating model "+ model_name+ " with folder: " + str(model_folder))
-            config = {"model_name": model_name}
+            config = {"model_name": model_name, "number_of_rights": config["number_of_rights"], "number_of_wrongs": config["number_of_wrongs"], "number_of_unknowns": config["number_of_unknowns"]}
             self.model = Model.Model(config, model_folder)
             print("model created ")
         except Exception as e:
@@ -126,8 +141,45 @@ class ModelController:
         """
 
         return_val = {"before": "", "after": "", "view": ""}
-        path = sorted((DirectoryManager.get_project_directory()/self.active_project/"dataloss").glob("*/"+image+"*.*"))
-        print(image+"*.*")
+        
+
+        new_image = self.convert_image_path(image)
+
+
+        result = self.model.predict(new_image)
+        print("result: "+str(result))
+        print(type(result))
+        
+        
+        return result
+    
+    
+    def predict_model(self):
+        """ predict the type of the images in the active model
+
+        Returns:
+            true if the prediction was successful, false otherwise
+        """
+        image_list = self.model.database.database
+        for image in image_list["file_list"]:
+            if image["evaluation"] != 1:
+                image_array = self.convert_image_path(image["file"])
+                result = self.model.predict(image_array)
+                self.model.update_image_prediction(image["file"], result)
+        
+    
+    
+    def convert_image_path(self, image_name):
+        """ convert the image path to the image files
+
+        Arguments:
+            image_name {str} -- image name to convert
+
+        Returns:
+            numpy array -- image converted to numpy array
+        """
+        path = sorted((DirectoryManager.get_project_directory()/self.active_project/"dataloss").glob("*/"+image_name+"*.*"))
+        print(image_name+"*.*")
         print(path)
 
         image_after = PIL.Image.open(path[0])
@@ -144,21 +196,4 @@ class ModelController:
 
         #normalize the images
         new_image = diff/255
-
-
-        print(new_image.shape)
-
-
-        
-
-        # return_val["after"] = base64.b64encode(open(path[0], "rb").read()).decode("utf-8")
-        # return_val["before"] = base64.b64encode(open(path[1], "rb").read()).decode("utf-8")
-        # return_val["view"] = open(path[2], "r").read()
-        # print(return_val["after"])
-        
-        result = self.model.predict(new_image)
-        print("result: "+str(result))
-        print(type(result))
-        
-        
-        return result
+        return new_image

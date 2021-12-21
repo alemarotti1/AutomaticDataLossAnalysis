@@ -149,5 +149,6 @@ function update_image(image, val){
 $(document).ready(function () {
     $("#btn-start-prediction").click(function (e) {
         eel.start_prediction()();
+        
     });
 });
