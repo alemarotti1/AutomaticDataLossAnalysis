@@ -154,6 +154,58 @@ function update_image(image, val){
 }
 
 
+function update_image_list(data){
+    if(data){
+        models[selected_model] = data;
+        $("#project-status-list").empty();
+        alert("Refreshed successfully");
+
+        
+
+        for(var j = 0; j < data.file_list.length; j++){
+            let eval = data.file_list[j].evaluation;
+            let result_eval = "TBD";
+            let color = "darkgray";
+            if( eval != -1) if (Math.abs(eval) < 0.2) {
+                result_eval = "Uncertain";
+                color = "orange";
+            }
+            else if (eval > 0.2) {
+                result_eval = "Certain True Positive";
+                color = "lightcyan";
+            }
+            else if (eval < -0.2) {
+                result_eval = "Certain False Positive";
+                color = "lightred";
+            }
+            $("#project-status-list").append(
+                '<tr style="text-align:center" class="project-status" id="'+data.file_list[j].file+'">'+
+                    '<td style="white-space: nowrap; overflow:hidden;text-overflow: ellipsis; width: 30vw; background-color: '+color+';">'+data.file_list[j].file+'</td>'+
+                    '<td style="background-color: '+color+'">'+result_eval+'</td>'+
+                    '<td style="background-color: '+color+';">'+data.file_list[j].state+'</td>'+
+                '</tr>'
+            );
+        }
+
+        $(".project-status").click(function (e) {
+            let file = $(this).attr("id");
+            
+
+            eel.get_image(file)(function (data) {
+                $("#before").attr('src', 'data:image/png;base64,'+data.before);
+                $("#after").attr('src', 'data:image/png;base64,'+data.after);
+                selected_image = file;
+                
+            });
+            $(".modal-img").show();
+        });
+    }
+    else{
+        alert("Error while refreshing");
+    }
+}
+
+
 $(document).ready(function () {
     $("#btn-start-prediction").click(function (e) {
         eel.start_prediction()(function (data) {
@@ -174,6 +226,24 @@ $(document).ready(function () {
 
     $("#btn-refresh-project").click(function (e) {
         alert("refresh");
-        //update_model_list();
+        eel.get_updated_model()(update_image_list);
     });
+
+    $("#btn-sort-certain").click(function (e) {
+        models[selected_model].file_list.sort(function (a, b) {
+            if(a.evaluation <= -1) return 1;
+            return Math.abs(b.evaluation) - Math.abs(a.evaluation);
+        });
+        update_image_list(models[selected_model]);
+    });
+
+    
+    $("#btn-sort-doubt").click(function (e) {
+        models[selected_model].file_list.sort(function (a, b) {
+            return Math.abs(a.evaluation) - Math.abs(b.evaluation);
+        });
+        update_image_list(models[selected_model]);
+    });
+    
+
 });

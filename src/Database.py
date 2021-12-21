@@ -25,7 +25,7 @@ class Database:
         self.database["file_list"] = list(map(lambda x: x if x["file"] != id else {"file": x["file"], "evaluation": evaluation, "state": state}, self.database["file_list"]))
 
 
-        #self.database["file_list"] [id]["evaluation"] = evaluation
+        #self.database["file_list"][id]["evaluation"] = evaluation
         #self.database["file_list"][id]["state"] = state
         self.change_level += 1
         return self.change_level

@@ -5,6 +5,8 @@ import base64
 import PIL
 import numpy as np
 
+from main import get_image
+
 
 
 
@@ -71,7 +73,16 @@ class ModelController:
     
     def get_feedback(self, img_name, feedback):
         try:
+            val = []
+            if feedback is True:
+                feedback=0.5
+                val = [1, 0]
+            else:
+                feedback=-0.5
+                val = [0, 1]
             self.model.update_image_feedback(img_name, feedback)
+            images = self.convert_image_path(img_name)
+            self.model.modelImage1.update_weights(images, val)
             return True
         except Exception as e:
             print(e)
